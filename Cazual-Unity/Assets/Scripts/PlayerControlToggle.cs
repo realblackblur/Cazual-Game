@@ -1,44 +1,50 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerControlToggle : MonoBehaviour
 {
     [Header("UI")]
-    [SerializeField] private Toggle playerToggle;
-    [SerializeField] private Text toggleLabel;
-
-    public bool IsPlayerAActive { get; private set; } = true;
+    public Toggle playerToggle;
+    public TMP_Text toggleLabel;
 
     private void Start()
     {
-        playerToggle.isOn = true;
+        if (playerToggle != null)
+        {
+            playerToggle.onValueChanged.AddListener(OnToggleChanged);
+        }
 
-        UpdateToggleLabel();
-
-        playerToggle.onValueChanged.AddListener(
-            OnToggleChanged
-        );
+        UpdateLabel();
     }
 
-    private void OnToggleChanged(bool isOn)
+    public bool IsPlayerAActive()
     {
-        IsPlayerAActive = isOn;
+        return playerToggle == null || !playerToggle.isOn;
+    }
 
-        UpdateToggleLabel();
+    private void OnToggleChanged(bool isPlayerB)
+    {
+        UpdateLabel();
 
-        if (IsPlayerAActive)
-        {
-            Debug.Log("Player A is active");
-        }
-        else
+        if (isPlayerB)
         {
             Debug.Log("Player B is active");
         }
+        else
+        {
+            Debug.Log("Player A is active");
+        }
     }
 
-    private void UpdateToggleLabel()
+    private void UpdateLabel()
     {
-        if (IsPlayerAActive)
+        if (toggleLabel == null)
+        {
+            return;
+        }
+
+        if (IsPlayerAActive())
         {
             toggleLabel.text = "PLAYER A";
         }
