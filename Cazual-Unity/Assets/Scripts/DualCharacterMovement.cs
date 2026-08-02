@@ -13,6 +13,14 @@ public class DualCharacterMovement : MonoBehaviour
     public float cellSize = 1f;
 
     private int selectedSteps = 1;
+    private void Start()
+    {
+        Debug.Log("DualCharacterMovement started");
+    }
+    public void TestStep1Click()
+    {
+        Debug.Log("Step 1 button was clicked");
+    }
 
     public void SelectSteps(int steps)
     {

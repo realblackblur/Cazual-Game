@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 65053474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: SelectSteps
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &65053474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,7 +915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 264880600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: MoveDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &264880600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,7 +1018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.07058824, g: 0.07450981, b: 0.08627451, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1254,7 +1278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 387591043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &387591043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1999,7 +2035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 839653366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: SelectSteps
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &839653366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2206,7 +2254,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 920501228}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: SelectSteps
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &920501228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,7 +2357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.07058824, g: 0.07450981, b: 0.08627451, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2607,6 +2667,7 @@ GameObject:
   - component: {fileID: 1101783965}
   - component: {fileID: 1101783964}
   - component: {fileID: 1101783963}
+  - component: {fileID: 1101783966}
   m_Layer: 5
   m_Name: Step1Button
   m_TagString: Untagged
@@ -2677,7 +2738,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1101783964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1101783966}
+        m_TargetAssemblyTypeName: StepButton, Assembly-CSharp
+        m_MethodName: ClickStepButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1101783964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,6 +2789,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101783961}
   m_CullTransparentMesh: 1
+--- !u!114 &1101783966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101783961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636b3ce8590b63472a6ec8f68aa414b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StepButton
+  movementManager: {fileID: 1815214440}
+  stepAmount: 1
 --- !u!1 &1140541331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3258,7 +3345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.07058824, g: 0.07450981, b: 0.08627451, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3391,7 +3478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.07058824, g: 0.07450981, b: 0.08627451, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3497,7 +3584,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1537214431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1537214431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3809,8 +3908,6 @@ MonoBehaviour:
   playerB: {fileID: 2127971886}
   playerControlToggle: {fileID: 1815214441}
   cellSize: 1
-  moveSpeed: 5
-  selectedSteps: 3
 --- !u!114 &1815214441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3824,7 +3921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControlToggle
   playerToggle: {fileID: 900927559}
-  toggleLabel: {fileID: 278623907}
+  toggleLabel: {fileID: 0}
 --- !u!4 &1815214442
 Transform:
   m_ObjectHideFlags: 0
@@ -3922,7 +4019,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1940932308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: SelectSteps
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1940932308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4043,7 +4152,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2008108153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1815214440}
+        m_TargetAssemblyTypeName: DualCharacterMovement, Assembly-CSharp
+        m_MethodName: MoveUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2008108153
 MonoBehaviour:
   m_ObjectHideFlags: 0
